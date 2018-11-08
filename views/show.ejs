@@ -1,0 +1,35 @@
+<% include partials/header%>
+
+
+
+<div class="container">
+
+<div class="row text-center">
+           <div class="col-md-8 mt-3">
+   <img src="<%= photo.image %>" class="img-fluid rounded" alt="Responsive image"> 
+
+        
+           </div> 
+
+           <div class="col-md-4 mt-3">
+   <form action="/photos/<%=photo._id%>/delete" method="POST">
+<button  class="btn btn-lg btn-success">DELETE</button>
+</form>
+<form  action="/photos/<%=photo._id%>/edit" method="GET">
+<button class="btn btn-lg btn-success">EDIT</button>
+</form>
+        
+           </div>           
+  
+
+
+
+    </div>
+
+
+
+
+
+
+<% include partials/footer%>
+
